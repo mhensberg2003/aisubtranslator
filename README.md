@@ -7,11 +7,35 @@ Built for watching things: the goal is a translation good enough that you stop
 noticing you are reading one. Tuned for English into Danish, works for any pair.
 
 ```bash
-export OPENROUTER_API_KEY=sk-or-...
-
 aisubtranslator translate Some.Film.2019.mkv --to da
 # → Some.Film.2019.da.srt, beside the video
 ```
+
+## Install
+
+Needs **Python 3.13+**, and **ffmpeg** on your `PATH` if you want to feed it
+video files. Subtitle files need nothing extra.
+
+```bash
+uv tool install git+https://github.com/mhensberg2003/aisubtranslator
+# or: pipx install git+https://github.com/mhensberg2003/aisubtranslator
+```
+
+Then get a key from [openrouter.ai/keys](https://openrouter.ai/keys) and put it
+in your shell profile:
+
+```bash
+export OPENROUTER_API_KEY=sk-or-...
+```
+
+Before translating a whole film, spend a fraction of a cent checking the output
+reads well:
+
+```bash
+aisubtranslator sample Some.Film.2019.mkv -n 20
+```
+
+A 45-minute episode costs roughly **$0.01–0.05** depending on the model.
 
 ## What it does
 
@@ -89,7 +113,7 @@ changing them are in [docs/adr/](docs/adr/).
 | Variable | Default | Purpose |
 | --- | --- | --- |
 | `OPENROUTER_API_KEY` | *(required)* | Your key. Never written to disk. |
-| `AISUBTRANSLATOR_MODEL` | `anthropic/claude-sonnet-4.5` | Any OpenRouter model id. |
+| `AISUBTRANSLATOR_MODEL` | `openai/gpt-5.6-luna` | Any OpenRouter model id. |
 | `OPENROUTER_BASE_URL` | `https://openrouter.ai/api/v1` | Override the endpoint. |
 
 Routing is pinned to a single upstream by default, so schema strictness and

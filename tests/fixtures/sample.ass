@@ -1,0 +1,24 @@
+[Script Info]
+Title: Fixture
+ScriptType: v4.00+
+WrapStyle: 0
+PlayResX: 1920
+PlayResY: 1080
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,48,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,2,10,10,10,1
+Style: Sign,Arial,60,&H00FFFF00,&H000000FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,2,2,8,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:03.00,Default,Alice,0,0,0,,{\i1}Hello{\i0} there,\Nmy friend!
+Dialogue: 0,0:00:04.00,0:00:06.00,Sign,,0,0,0,,{\an8\pos(960,120)}CLOSED FOR WINTER
+Comment: 0,0:00:07.00,0:00:08.00,Default,,0,0,0,,TL note: check this line later
+Dialogue: 0,0:00:09.00,0:00:12.00,Default,,0,0,0,,{\k20}Hel{\k15}lo {\k30}world
+Dialogue: 0,0:00:13.00,0:00:14.00,Default,,0,0,0,,{\an8}\h\hA sign with leading markup only
+Dialogue: 1,0:00:15.00,0:00:17.00,Default,Bob,20,20,40,karaoke,Nothing special here at all.
+Dialogue: 0,0:00:18.00,0:00:19.00,Default,,0,0,0,,♪
+Dialogue: 0,0:00:20.00,0:00:22.00,Default,,0,0,0,,Subtitles by OpenSubtitles.org
+Dialogue: 0,0:00:23.00,0:00:31.00,Default,Alice,0,0,0,,This is a considerably longer line of dialogue that will certainly need to be re-wrapped onto two separate lines.
+Dialogue: 0,0:00:32.00,0:00:34.00,Default,,0,0,0,,{\p1}m 0 0 l 100 0 100 100 0 100{\p0}

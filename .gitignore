@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Test and coverage artefacts
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Work state written beside media: bibles, checkpoints, extracted tracks.
+# Never belongs in this repo, but ignore it in case anyone runs the tool here.
+.aisubtranslator/

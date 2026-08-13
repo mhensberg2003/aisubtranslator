@@ -1,5 +1,9 @@
 # aisubtranslator
 
+[![CI](https://github.com/mhensberg2003/aisubtranslator/actions/workflows/ci.yml/badge.svg)](https://github.com/mhensberg2003/aisubtranslator/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python 3.13+](https://img.shields.io/badge/python-3.13%2B-blue.svg)](https://www.python.org/)
+
 Translate subtitles with an LLM. Drop in a subtitle file or a video, get a
 sidecar your player picks up automatically.
 
